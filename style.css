@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 preparar repositorio
 Fazer o site em grid
@@ -25,3 +26,26 @@ aside{
   #e2e2e2
 }
 */
+=======
+body{
+    display: grid;
+    grid-template-areas: "header"
+                        "section"
+                        "aside"
+                        "footer";
+    grid-template-rows: 100vw;
+    grid-auto-columns: 80vh 40vh 60vh 90vh;
+}
+header{
+    grid-area: header;
+}
+section{
+    grid-area: section;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+>>>>>>> fbf26ef639047ea357206bbb802b903f40f59bf3
