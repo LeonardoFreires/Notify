@@ -1,0 +1,27 @@
+/*
+preparar repositorio
+Fazer o site em grid
+Precisa ser responsivo
+
+ <section>
+        <div><img src="images/icone1.png" alt=""> </div>
+        <div><img src="images/icone2.png" alt=""></div>
+        <div><img src="images/icone3.png" alt=""></div>
+    </section>
+
+body{
+    margin:0;
+    
+}
+
+header{
+	border-top:#2dcc70;
+}
+section{
+    background-color: #ffffff;
+}
+
+aside{
+  #e2e2e2
+}
+*/
