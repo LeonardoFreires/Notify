@@ -1,0 +1,21 @@
+body{
+    display: grid;
+    grid-template-areas: "header"
+                        "section"
+                        "aside"
+                        "footer";
+    grid-template-rows: 100vw;
+    grid-auto-columns: 80vh 40vh 60vh 90vh;
+}
+header{
+    grid-area: header;
+}
+section{
+    grid-area: section;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
