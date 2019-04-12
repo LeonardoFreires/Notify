@@ -1,33 +1,5 @@
-<<<<<<< HEAD
-/*
-preparar repositorio
-Fazer o site em grid
-Precisa ser responsivo
-
- <section>
-        <div><img src="images/icone1.png" alt=""> </div>
-        <div><img src="images/icone2.png" alt=""></div>
-        <div><img src="images/icone3.png" alt=""></div>
-    </section>
-
 body{
     margin:0;
-    
-}
-
-header{
-	border-top:#2dcc70;
-}
-section{
-    background-color: #ffffff;
-}
-
-aside{
-  #e2e2e2
-}
-*/
-=======
-body{
     display: grid;
     grid-template-areas: "header"
                         "section"
@@ -41,11 +13,12 @@ header{
 }
 section{
     grid-area: section;
+    background-color: #ffffff;
 }
 aside{
     grid-area: aside;
+    background-color: #e2e2e2;
 }
 footer{
     grid-area: footer;
 }
->>>>>>> fbf26ef639047ea357206bbb802b903f40f59bf3
