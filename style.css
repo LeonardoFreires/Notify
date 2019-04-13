@@ -1,5 +1,27 @@
-/*ESTRUTURA: ID - CLASS - TAG*/
 
+body{
+    margin:0;
+    background-color: #2ecb72;
+    display: grid;
+    grid-template-areas: "header"
+                         "section"
+                         "aside"
+                         "footer";
+    grid-template-columns: 100vw;
+    grid-auto-rows: 83.3vh 46.09vh 58vh 81.05vh;
+}
+
+header{
+    grid-area: header;
+    margin-top: 8.48px;
+    background-image: url("images/banner.png");
+    background-size: cover;
+}
+
+section{
+    grid-area: section;
+    background-color: black;
+}
 
 aside{
     grid-area: aside;
@@ -7,64 +29,6 @@ aside{
 }
 
 footer{
-    grid-area: footer;    
+    grid-area: footer;
+    background-color: blueviolet;
 }
-
-footer div:nth-child(1){
-    background-color: #ffffff;
-    display: flex;
-    height: 50%;
-}
-
-footer div:nth-child(2){
-    background-color: #e2e2e2;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-body{
-    margin:0;
-    display: grid;
-    grid-template-areas: "header"
-                         "section"
-                         "aside"
-                         "footer"
-                         "footer";
-    grid-template-columns: 100vw;
-    grid-auto-rows: 85vh 50vh 60vh 60vh 100vh;
-    background-color: #2ecb72;
-}
-
-header{
-    grid-area: header;
-    margin-top: 8.49px;
-    background-image: url("images/banner.png");
-    background-size: cover;
-    display: flex;
-    justify-content: space-around;
-}
-
-section{
-    grid-area: section;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-section div img:nth-child(1){
-    background-color: #2ecb72;
-    border-radius: 100%;
-}
-
-section div img:nth-child(2){
-    background-color: #2ecb72;
-    border-radius: 100%;
-}
-section div img:nth-child(3){
-    background-color: #2ecb72;
-    border-radius: 100%;
-}
-
