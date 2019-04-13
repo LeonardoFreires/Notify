@@ -1,25 +1,47 @@
-#headerDivTitulo{
+header section div{
     width: 100%;
     height: 120px;
-    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header section div:nth-child(1) h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 35pt;
+    font-weight: inherit;
+    color:#ffffff;
+    margin-left: 30px;
+}
+
+header section div:nth-child(1) span{
+   color:#2ecb72;   
 }
 
 #headerDivTexto{
     width: 100%;
     height: 80px;
-    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;   
 }
 
-#headerDivIcones{
+#headerDivTexto p{
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 15pt;
+}
+
+nav {
     width: 100%;
     height: 100px;
-    background-color: blueviolet;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#headerDivIcones div{
+nav div{
     height: 100%;
     width: 200px;
     display: flex;
@@ -30,8 +52,9 @@
     padding-left: 30px;
 }
 
-#headerDivIcones div a{
+nav div a{
     background-color: black;
+    opacity: 0.50;
     width: 45px;
     height: 45px;
     border-radius: 100%;
@@ -61,25 +84,22 @@ header{
     justify-items: center;
 }
 
-header div:nth-child(1){
-    background-color: #2ecb72;
+header section{
     width: 50%;
-    opacity: 0.91;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-end;  
 }
- 
-header div:nth-child(2){
-    background-color: blue;
+
+header aside{
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
-header div:nth-child(2) img{
+header aside img{
     height: 434.6px;
     padding-right:140px; 
 }
