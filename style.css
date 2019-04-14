@@ -7,7 +7,7 @@ body{
                          "aside"
                          "footer";
     grid-template-columns: 100vw;
-    grid-auto-rows: 83.3vh 46.09vh 54vh 73vh;
+    grid-auto-rows: 83.3vh 46.09vh 360px 500px;
 }
     #asideHeader{   
         display: flex;
@@ -227,8 +227,13 @@ body{
                 border-top-right-radius: 14px;
                 border-bottom-right-radius: 14px;
             }
+
+            #submitButtom:hover{
+                cursor: pointer;
+            }
         
         #asideDivVideo{
+            width: 425px;
             border-radius: 14px;
             margin-top: 50px;    
         }
@@ -271,6 +276,7 @@ body{
             #footerTexto4{
                 color: #868686;
                 font-size: 10pt;
+                text-align: center;
             }
 
             #footerImages{
@@ -278,19 +284,46 @@ body{
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
-            }
-                footer div a img{
+            }   
+                #footerImages a{
                     height: 40px;
+                    margin: 2px;
+
                 }
+                #footerImages a img{
+                    height: 40px;
+
+                }
+                #footerImages a img:hover{
+                    opacity: 0.5;
+                }
+                #footerImages a:hover{
+                    background-color: #2ecb72;
+                }
+
             #socialMedia{
-                width: 18%;
+                width: 16%;
                 display: flex;
                 justify-content: space-around;
             }
                 .socialIcons{
+                    background-color: #bebebe;
                     border-radius: 100%;
-                    background-color: #e2e2e2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 28px;
+                    width: 28px;
                 }
+
+                .socialIcons:hover{
+                    background-color: #2ecb72;
+                }
+
+                .socialIcons img{
+                    height: 16px;
+                }
+
 
         #footerCinza{
         background-color: #e2e2e2;
@@ -305,22 +338,142 @@ body{
                 width: 35%;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
             }
 
                 .footerLink{
                     font-size: 11pt;
-                    color: #868686;
+                    color: #757575;
                     text-decoration: none;
                 }
-        
+                
+             
+                .footerLink:hover{
+                    color: #2ecb72;
+                }
+
+
+@media(max-width: 1000px){
+    body{
+        grid-auto-rows: 83.3vh 46.09vh 70vh 500px;
+    }
+    aside{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #asideDivTextos{
+        margin-top: 0;
+    }
+
+    #footerBranco{
+        justify-content: space-evenly;
+    }
+        #footerImages{
+            width: 90%;
+            overflow: hidden;
+        }
+        #socialMedia{
+            width: 40%;
+
+        }
+
+        #footerBranco{
+            padding: 20px 0;
+        }
+
+    #footerCinza{
+        padding: 0;
+    }
+        #footerLinks{
+            width: 80%;
+        }
+        #footerTexto1{
+            width: 425px;
+        }
+}
 
 @media(max-width: 768px){
     body{
-        grid-auto-rows: 83.3vh 46.09vh 100vh 100vh;
+        grid-auto-rows: 83.3vh 46.09vh 80vh 500px;
     }
         aside{
             flex-direction: column;
             align-items: center;
         }
+        
+        #footerBranco{
+            justify-content: space-evenly;
+        }
+
+            #socialMedia{
+                width: 40%;
+
+            }
+        #footerCinza{
+            padding: 0;
+        }
+            #footerLinks{
+                width: 80%;
+            }
+}
+
+@media(max-width: 500px){
+    body{
+        grid-auto-rows: 83.3vh 46.09vh 620px 500px;
+    }
+    aside{
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        #asideDivTextos{
+            width: 90%;
+        }
+        #asideTitulo{
+            align-self: flex-start;
+        }
+        #asideCorpo{
+            width: 100%;
+        }
+        #asideDivVideo{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #asideVideo{
+            width: 95%;
+            align-self: center;
+        }
+
+    footer{
+        justify-content: center;
+    }
+
+        #footerTexto1{
+            width: 90%;
+            font-size: 12pt;
+        }
+
+        #footerTexto4{
+            font-size: 12pt;
+            width: 90%;
+        }
+
+        #socialMedia{
+            height: 40px;
+            width: 80%;
+        }
+
+        #footerLinks{
+            width: 95%;
+        }
+
+        #footerLinks a{
+            font-size: 9pt;
+        }
+
 }
 
