@@ -28,10 +28,13 @@
 }
 
 #containerHeader div:nth-child(1) h1{
-    font-family: 'Pacifico', cursive;
     font-size: 38pt;
+    color:#ffffff;  
+    font-family: 'Pacifico', cursive;
     font-weight: inherit;
-    color:#ffffff;   
+    width: 105px;
+    margin-left: -24px;
+    margin-block-end: 32px;
 }
 
 #containerHeader div:nth-child(1) h1 span{
@@ -48,17 +51,23 @@
 #containerHeader div:nth-child(2) p{
     text-align: justify;
     font-family: 'Roboto', sans-serif;
-    color: #ffffff;
+    color: #ffffff;    
     font-size: 15pt;
+    width: 450px;
+    padding-left: 208px;
+    margin-left: 74px;
+    margin-top: 2px;
 }
 
-#containerHeader nav {
-    width: 100%;
+#containerHeader nav {    
+    height: 60px;
+    width: 178px;
     display: flex;
-    align-items: center;   
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;   
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+    padding-left: 258px;
 }
 
 #containerHeader a{
@@ -72,15 +81,20 @@
     justify-content: center;
 }
 
-
 #containerHeader a:hover{
     background-color: #2ecb72;
     opacity: 1; 
 }
 
+.iconSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px; 
+}
+
 body{
     margin:0;
-    background-color: #2ecb72;
     display: grid;
     grid-template-areas: "header"
                          "section"
@@ -92,17 +106,53 @@ body{
 
 header{
     grid-area: header;
-    margin-top: 8.48px;
     background-image: url("images/banner.png");
     background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 8px solid;
+    border-color: #2fd072;
 }
 
 section{
     grid-area: section;
     background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 133px;
+    padding-right: 133px;
+    padding-top: 20px;
+}
+
+section div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+}
+
+section div div.iconSection {
+    width: 85px; 
+    height: 85px; 
+    background: #2fd072; 
+}
+
+section div p{
+    font-family: 'Roboto', sans-serif;
+    color:grey;
+    width: 280px;
+    font-size: 10pt;
+    line-height: 1.5;
+}
+
+section div h3{
+    font-family: 'Roboto', sans-serif;
+    width: 250px;
+    font-weight: 100;
 }
 
 aside{
