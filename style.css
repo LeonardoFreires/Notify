@@ -1,7 +1,6 @@
 
 /*ID*/
 
-
 #asideCorpo{
     font-family: 'Hind', sans-serif;
     font-size: 11pt;
@@ -32,8 +31,8 @@
 }
 
 #asideHeader img{
-    height: 434.6px;
-    padding-right:140px; 
+    height: 431px;
+    padding-right:191px; 
 }
 
 #asideTitulo{
@@ -44,15 +43,14 @@
 }
 
 #containerHeader{
-    display: flex;
-    width: 50%;
+    display: flex;    
     height: 260px;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-start;
+    margin-top: -69px;
 }
 
-#containerHeader a{
+#containerHeader nav a{
     background-color: black;
     opacity: 0.50;
     width: 45px;
@@ -80,9 +78,8 @@
     color:#ffffff;  
     font-family: 'Pacifico', cursive;
     font-weight: inherit;
-    width: 105px;
-    margin-left: -24px;
-    margin-block-end: 32px;
+    width: 113px;
+    margin-right: 19px;
 }
 
 #containerHeader div:nth-child(1) h1 span{
@@ -100,11 +97,10 @@
     text-align: justify;
     font-family: 'Roboto', sans-serif;
     color: #ffffff;    
-    font-size: 15pt;
-    width: 450px;
+    font-size: 17pt;
+    width: 400px;
     padding-left: 208px;
     margin-left: 74px;
-    margin-top: 2px;
 }
 
 #containerHeader nav {    
@@ -114,8 +110,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 12px;
     padding-left: 258px;
+}
+
+#containerHeader nav a:nth-child(1){    
+    margin-left: 22px;
+}
+
+#containerHeader nav a:nth-child(2){    
+    margin-left: 10px;
+}
+
+#containerHeader nav a:nth-child(3){    
+    margin-left: 10px;
 }
 
 #emailAddress{
@@ -239,15 +246,60 @@
 
 /*PSEUDO-CLASSE*/
 
-@media(max-width: 768px){
-    body{
-        grid-auto-rows: 83.3vh 46.09vh 100vh 100vh;
-    }        
-    
+/* TABLET */
+@media (max-width:768px){   
+    #asideHeader{
+        height: 20%; 
+        display: none;
+    }
+
+    #containerHeader{
+        height: 80%;
+
+    }
+
+    #containerHeader nav {
+        height: 60px;
+        width: 178px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
     aside{
         flex-direction: column;
         align-items: center;
     }
+
+    body{
+        grid-template-areas: "header"
+        "section"
+        "section"
+        "aside"
+        "footer";
+        grid-auto-rows: 83.3vh 20vh 46.09vh 100vh 100vh;
+    }      
+    
+    header{
+        flex-direction: column;  
+    }
+}
+  
+  /* CELULAR */
+  @media (max-width:425px){      
+    body{
+        grid-template-areas: "header"
+                             "section"
+                             "aside"
+                             "footer";
+      grid-template-rows: 15vh 60vh 60vh 80vh 30vh;
+    }   
+    
+    body{
+        grid-auto-rows: 15vh 60vh 60vh 80vh 30vh;;
+    }     
 }
 
 /*TAG*/
@@ -355,4 +407,3 @@ section div p{
     font-size: 10pt;
     line-height: 1.5;
 }
-
