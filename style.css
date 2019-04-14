@@ -1,22 +1,254 @@
 body{
+    margin:0;
+    background-color: #2ecb72;
     display: grid;
     grid-template-areas: "header"
-                        "section"
-                        "aside"
-                        "footer";
-    grid-template-rows: 100vw;
-    grid-auto-columns: 80vh 40vh 60vh 90vh;
+                         "section"
+                         "aside"
+                         "footer";
+    grid-template-columns: 100vw;
+    grid-auto-rows: 83.3vh 46.09vh 54vh 73vh;
 }
-header{
-    grid-area: header;
+
+    #headerDivTitulo{
+        width: 100%;
+        height: 120px;
+        background-color: aqua;
+    }
+
+    #headerDivTexto{
+        width: 100%;
+        height: 80px;
+        background-color: red;
+    }
+
+    #headerDivIcones{
+        width: 100%;
+        height: 100px;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #headerDivIcones div{
+        height: 100%;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 34px;
+        padding-left: 30px;
+    }
+
+    #headerDivIcones div a{
+        background-color: black;
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header{
+        grid-area: header;
+        margin-top: 8.48px;
+        background-image: url("images/banner.png");
+        background-size: cover;
+        display: flex;
+        justify-items: center;
+    }
+
+    header div:nth-child(1){
+        background-color: #2ecb72;
+        width: 50%;
+        opacity: 0.91;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
     
+    header div:nth-child(2){
+        background-color: blue;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    header div:nth-child(2) img{
+        height: 434.6px;
+        padding-right:140px; 
+    }
+
+    section{
+        grid-area: section;
+        background-color: #ffffff;
+    }
+
+    aside{
+        grid-area: aside;
+        background-color: #e2e2e2;
+        padding: 0 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly ;
+    }
+
+        #asideDivTextos{
+            font-family: 'Hind', sans-serif;
+            width: 450px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+        }
+
+            #asideTitulo{
+                font-family: 'Hind', sans-serif;
+                font-weight: bold;
+                font-size: 14pt;
+                margin: 0;
+            }
+
+            #asideCorpo{
+                font-family: 'Hind', sans-serif;
+                font-size: 11pt;
+                line-height: 1.5;
+                color: #868686;
+            }
+
+            aside form{
+                display: flex;
+                flex-direction: row;
+                width: 82%;
+                height: 40px;
+                z-index: 1000;
+            }
+
+            #emailAddress{
+                font-family: 'Hind', sans-serif;
+                font-size: 12pt;
+                width: 100%;
+                height: 100%;
+                padding-right: 30%;
+                padding-left: 7%;
+                border-radius: 13px;
+                border-style: solid;
+                border-color: #cecece;
+                border-width: 1px;
+            }
+        
+            #submitButtom{
+                font-family: 'Hind', sans-serif;
+                font-weight: bold;
+                font-size: 14pt;
+                height: 110%;
+                width: 53.3%;
+                margin-left: -30%;
+                background-color: #2ecb72;
+                color: #ffffff;
+                border: none;
+                border-top-right-radius: 14px;
+                border-bottom-right-radius: 14px;
+            }
+        
+        #asideDivVideo{
+            border-radius: 14px;
+            margin-top: 50px;    
+        }
+        
+    footer{
+        grid-area: footer;
+        font-family: 'Hind', sans-serif;
+        background-color: #e2e2e2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        #footerBranco{
+        background-color: #ffffff;
+        height: 81%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+            #footerTexto1{
+                color: #868686;
+                font-size: 11pt;
+                font-style: italic;
+                margin: 0;
+                text-align: center;
+                width: 52%;
+            }
+            #footerTexto2{
+                font-weight: bold;
+            }
+            #footerTexto3{
+                font-weight: bold;
+                font-size: 16pt;
+                margin: 0;
+            }
+            #footerTexto4{
+                color: #868686;
+                font-size: 10pt;
+            }
+
+            #footerImages{
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+                footer div a img{
+                    height: 40px;
+                }
+            #socialMedia{
+                width: 18%;
+                display: flex;
+                justify-content: space-around;
+            }
+                .socialIcons{
+                    border-radius: 100%;
+                    background-color: #e2e2e2;
+                }
+
+        #footerCinza{
+        background-color: #e2e2e2;
+        height: 19%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+            #footerLinks{
+                width: 35%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+                .footerLink{
+                    font-size: 11pt;
+                    color: #868686;
+                    text-decoration: none;
+                }
+        
+
+@media(max-width: 768px){
+    body{
+        grid-auto-rows: 83.3vh 46.09vh 100vh 100vh;
+    }
+        aside{
+            flex-direction: column;
+            align-items: center;
+        }
 }
-section{
-    grid-area: section;
-}
-aside{
-    grid-area: aside;
-}
-footer{
-    grid-area: footer;
-}
+
