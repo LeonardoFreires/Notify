@@ -291,7 +291,7 @@
 /*PSEUDO-CLASSE*/
 
 /* TABLET */
-@media (max-width:768px){   
+@media (max-width:1000px){   
     
     #asideHeader{
         height: 20%; 
@@ -346,16 +346,13 @@
 
     aside{
         flex-direction: column;
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
 
     body{
-        grid-template-areas: "header"
-        "section"
-        "section"
-        "aside"
-        "footer";
-        grid-auto-rows: 83.3vh 20vh 46.09vh 620px 500px;
+        grid-auto-rows: 83.3vh 60vh 620px 500px;
     }      
     
     header{
@@ -364,7 +361,7 @@
 }
   
   /* CELULAR */
-  @media (max-width:425px){      
+  @media (max-width:500px){      
 
     #asideDivTextos{
         width: 90%;
@@ -421,11 +418,7 @@
     }
 
     body{
-        grid-template-areas: "header"
-                             "section"
-                             "aside"
-                             "footer";
-      grid-template-rows: 15vh 60vh 60vh 620px 500px;
+      grid-template-rows: 15vh 60vh 620px 500px;
     }   
     
     footer{
@@ -441,8 +434,8 @@ aside{
     background-color: #e2e2e2;
     padding: 0 50px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly ;
+    flex-wrap: wrap;
 }
 
 aside form{
@@ -486,7 +479,6 @@ header div:nth-child(2){
 
 header div:nth-child(2) img{
     height: 434.6px;
-    padding-right:140px; 
 }
 
 body{
@@ -506,8 +498,6 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-left: 133px;
-    padding-right: 133px;
     padding-top: 20px;
 }
 
